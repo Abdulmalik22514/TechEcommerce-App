@@ -1,0 +1,12 @@
+{
+  "name": "TechEcommerce",
+  "displayName": "TechEcommerce",
+  "expo": {
+    "name": "TechEcommerce",
+    "slug": "TechEcommerce",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
