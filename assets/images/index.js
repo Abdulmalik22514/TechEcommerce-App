@@ -1,0 +1,16 @@
+export const AirPod = require("./airpod.png");
+export const AppleWatch = require("./appleWatch.png");
+export const NoFavorites = require("./favorites.png");
+export const IpadAir = require("./ipadAir.png");
+export const Iphone = require("./iphone.png");
+export const Splash = require("./onboarding.png");
+export const Samsung = require("./samWatch.png");
+export const Apple = require("./watch.png");
+// export const AirPod = require("./airpod.png");
+// export const AirPod = require("./airpod.png");
+// export const AirPod = require("./airpod.png");
+// export const AirPod = require("./airpod.png");
+// export const AirPod = require("./airpod.png");
+// export const AirPod = require("./airpod.png");
+// export const AirPod = require("./airpod.png");
+// export const AirPod = require("./airpod.png");
