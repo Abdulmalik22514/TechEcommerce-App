@@ -5,7 +5,7 @@ import * as Colors from "./colors";
 
 export const Container = ({
   children,
-  barColor = Colors.Ash,
+  barColor = Colors.Background,
   backgroundColor,
 }) => {
   return (
