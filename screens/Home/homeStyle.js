@@ -2,10 +2,6 @@ import { StyleSheet } from "react-native";
 import * as Colors from "../../common/colors";
 
 export const HomeStyles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#F2F2F2",
-  },
   moreBox: {
     flexDirection: "row",
     alignSelf: "flex-end",
