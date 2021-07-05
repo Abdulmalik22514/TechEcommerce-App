@@ -44,14 +44,14 @@ export const CategoriesCard = ({ title, isActive, onPress }) => {
 
 export const WearablesCard = ({ image, label, type, amount }) => {
   return (
-    <View style={{ marginRight: 30 }}>
+    <TouchableOpacity style={{ marginRight: 30 }}>
       <Image source={image} style={styles.image} resizeMode={"contain"} />
       <View style={styles.wearablesCont}>
         <Text style={styles.label}>{label}</Text>
         <Text style={styles.type}>{type}</Text>
         <Text style={styles.amount}>{`$ ${amount}`}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
