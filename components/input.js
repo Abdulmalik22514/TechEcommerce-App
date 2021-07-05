@@ -26,7 +26,7 @@ export const Input = ({
         <TextInput
           style={styles.input}
           placeholder={placeholder}
-          placeholderTextColor={Colors.Black}
+          placeholderTextColor={Colors.Grey}
           secureTextEntry={secure}
         />
         <TouchableOpacity>
