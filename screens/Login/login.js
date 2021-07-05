@@ -1,48 +1,44 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import * as Colors from "../../common/colors";
 import { Button } from "../../components/buttons";
 import { CustomText, Input } from "../../components/input";
 import { Email, Lock } from "../../assets/svg";
+import { Container } from "../../common/container";
 
 export default function Login({ navigation }) {
   return (
-    <View style={styles.container}>
-      <StatusBar style={"light"} />
-      <Text style={styles.findGadget}>Welcome back</Text>
-      <View style={styles.bottomBox}>
-        <Text style={styles.label}>Login</Text>
-        <Input
-          icon={<Email />}
-          title="Email"
-          placeholder="rosina@company.com"
-        />
-        <Input
-          icon={<Lock />}
-          title="Password"
-          placeholder=""
-          secure
-          isVisible
-        />
-        <CustomText title="Forgot passcode?" />
-        <Button
-          title="Login"
-          onPress={() => navigation.navigate("home")}
-          titleColor={Colors.White}
-        />
-        <CustomText title="Create account" isCenter />
-      </View>
-    </View>
+    <>
+      <Container barColor={Colors.Purple} backgroundColor={Colors.Purple}>
+        <Text style={styles.findGadget}>Welcome back</Text>
+        <View style={styles.bottomBox}>
+          <Text style={styles.label}>Login</Text>
+          <Input
+            icon={<Email />}
+            title="Email"
+            placeholder="rosina@company.com"
+          />
+          <Input
+            icon={<Lock />}
+            title="Password"
+            placeholder=""
+            secure
+            isVisible
+          />
+          <CustomText title="Forgot passcode?" />
+          <Button
+            title="Login"
+            onPress={() => navigation.navigate("home")}
+            titleColor={Colors.White}
+          />
+          <CustomText title="Create account" isCenter />
+        </View>
+      </Container>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.Purple,
-    paddingTop: 40,
-  },
   label: {
     fontWeight: "600",
     fontSize: 18,
@@ -58,10 +54,10 @@ const styles = StyleSheet.create({
     marginBottom: 50,
   },
   bottomBox: {
-    flex: 1,
     backgroundColor: Colors.White,
     borderTopLeftRadius: 25,
     borderTopRightRadius: 25,
     padding: 50,
+    flex: 1,
   },
 });
