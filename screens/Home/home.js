@@ -70,7 +70,7 @@ export default function Home({ navigation }) {
 
       <View style={styles.moreBox}>
         <Text style={styles.seemore}>see more</Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("search")}>
           <Seemore />
         </TouchableOpacity>
       </View>
