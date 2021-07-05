@@ -18,7 +18,7 @@ export default function Onboarding({ navigation }) {
       <Button
         title="Get started"
         style={styles.button}
-        titleColor
+        titleColor={Colors.Purple}
         onPress={() => navigation.navigate("login")}
       />
     </SafeAreaView>
@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     width: 290,
     letterSpacing: 0.8,
+    // fontFamily: "Montserrat",
   },
   splashImg: {
     width: "100%",
