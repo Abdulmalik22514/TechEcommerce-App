@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import * as Colors from "../../common/colors";
 import { Container } from "../../common/container";
-import { AppleCard, AppleItems } from "./utils/result";
+import { AppleCard, AppleItems } from "./utils/searchResult";
 import { SearchBox } from "./utils/searchBox";
 
 export default function SearchResult({ navigation }) {
