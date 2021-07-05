@@ -1,9 +1,6 @@
-import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import {
-  SafeAreaView,
   ScrollView,
-  StyleSheet,
   Text,
   TextInput,
   TouchableOpacity,
@@ -18,62 +15,64 @@ import {
   WearablesCard,
 } from "./utils/itemCard";
 import { HomeStyles as styles } from "./homeStyle";
+import { Container } from "../../common/container";
 
 export default function Home({ navigation }) {
   const [active, setActive] = useState("Wearables");
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar />
-      <View style={styles.topBox}>
-        <Menu />
-        <View style={styles.searchBox}>
-          <SearchIcon />
-          <TextInput
-            style={styles.input}
-            placeholder="Search"
-            placeholderTextColor={Colors.Grey}
-          />
-        </View>
-      </View>
-      <Text style={styles.orderText}>Order online collect in store</Text>
-      <View style={styles.topNav}>
-        {Categories.map((item, index) => {
-          return (
-            <CategoriesCard
-              key={index}
-              title={item.title}
-              isActive={item.title === active}
-              onPress={() => setActive(item.title)}
+    <>
+      <Container>
+        <View style={styles.topBox}>
+          <Menu />
+          <View style={styles.searchBox}>
+            <SearchIcon />
+            <TextInput
+              style={styles.input}
+              placeholder="Search"
+              placeholderTextColor={Colors.Grey}
             />
-          );
-        })}
-      </View>
-      <View style={styles.scrollView}>
-        <ScrollView
-          horizontal={true}
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.scrollCont}
-        >
-          {Wearables.map((item, index) => {
+          </View>
+        </View>
+        <Text style={styles.orderText}>Order online collect in store</Text>
+        <View style={styles.topNav}>
+          {Categories.map((item, index) => {
             return (
-              <WearablesCard
+              <CategoriesCard
                 key={index}
-                label={item.label}
-                image={item.image}
-                type={item.type}
-                amount={item.amount}
+                title={item.title}
+                isActive={item.title === active}
+                onPress={() => setActive(item.title)}
               />
             );
           })}
-        </ScrollView>
-      </View>
+        </View>
+        <View style={styles.scrollView}>
+          <ScrollView
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.scrollCont}
+          >
+            {Wearables.map((item, index) => {
+              return (
+                <WearablesCard
+                  key={index}
+                  label={item.label}
+                  image={item.image}
+                  type={item.type}
+                  amount={item.amount}
+                />
+              );
+            })}
+          </ScrollView>
+        </View>
 
-      <View style={styles.moreBox}>
-        <Text style={styles.seemore}>see more</Text>
-        <TouchableOpacity onPress={() => navigation.navigate("search")}>
-          <Seemore />
-        </TouchableOpacity>
-      </View>
-    </SafeAreaView>
+        <View style={styles.moreBox}>
+          <Text style={styles.seemore}>see more</Text>
+          <TouchableOpacity onPress={() => navigation.navigate("search")}>
+            <Seemore />
+          </TouchableOpacity>
+        </View>
+      </Container>
+    </>
   );
 }
