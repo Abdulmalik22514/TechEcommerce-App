@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import * as Colors from "../../common/colors";
 import { SearchBox } from "./utils/searchBox";
 import * as Images from "../../assets/images";
