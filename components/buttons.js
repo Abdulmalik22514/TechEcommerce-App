@@ -15,15 +15,13 @@ export const Button = ({
       style={[
         styles.account,
         isSmall && styles.smallButton,
-        titleColor && styles.titleColorButton,
+        // titleColor && styles.titleColorButton,
         hasBorder && styles.borderButton,
         style,
       ]}
       onPress={onPress}
     >
-      <Text style={[styles.acct, titleColor && styles.titleColor]}>
-        {title}
-      </Text>
+      <Text style={[styles.acct, { color: titleColor }]}>{title}</Text>
     </TouchableOpacity>
   );
 };
@@ -34,9 +32,9 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "white",
   },
-  titleColorButton: {
-    backgroundColor: "white",
-  },
+  // titleColorButton: {
+  //   backgroundColor: "white",
+  // },
   smallButton: {
     width: 133,
   },
@@ -55,7 +53,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 25,
-    width: 320,
+    width: "80%",
     alignSelf: "center",
   },
 });
