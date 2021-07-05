@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, View } from "react-native";
 import * as Colors from "./colors";
 
 export const Container = ({
@@ -12,9 +12,7 @@ export const Container = ({
     <>
       <StatusBar style="dark" />
       <SafeAreaView style={{ backgroundColor: barColor }} />
-      <SafeAreaView style={{ backgroundColor, flex: 1 }}>
-        {children}
-      </SafeAreaView>
+      <View style={{ backgroundColor, flex: 1 }}>{children}</View>
     </>
   );
 };
