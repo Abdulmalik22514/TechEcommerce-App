@@ -10,7 +10,10 @@ export default function SearchResult({ navigation }) {
     <>
       <Container>
         <View style={{ paddingHorizontal: 25 }}>
-          <SearchBox placeholder="Apple" />
+          <SearchBox
+            placeholder="Apple"
+            onPress={() => navigation.navigate("noresult")}
+          />
           <Text style={styles.result}>Found 6 results</Text>
           <View style={styles.resultCont}>
             {AppleItems.map((item, index) => {
