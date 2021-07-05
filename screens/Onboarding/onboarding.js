@@ -1,6 +1,5 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text } from "react-native";
 import * as Colors from "../../common/colors";
 import * as Images from "../../assets/images";
 import { Button } from "../../components/buttons";
@@ -28,11 +27,6 @@ export default function Onboarding({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.Purple,
-    paddingTop: 40,
-  },
   findGadget: {
     fontSize: 60,
     fontWeight: "800",
