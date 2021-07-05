@@ -26,7 +26,11 @@ export default function Login({ navigation }) {
           isVisible
         />
         <CustomText title="Forgot passcode?" />
-        <Button title="Login" onPress={() => navigation.navigate("home")} />
+        <Button
+          title="Login"
+          onPress={() => navigation.navigate("home")}
+          titleColor={Colors.White}
+        />
         <CustomText title="Create account" isCenter />
       </View>
     </View>
