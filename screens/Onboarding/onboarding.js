@@ -1,9 +1,10 @@
 import React from "react";
-import { Image, StyleSheet, Text } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import * as Colors from "../../common/colors";
 import * as Images from "../../assets/images";
 import { Button } from "../../components/buttons";
 import { Container } from "../../common/container";
+import { OnboardingStyles as styles } from "./onboardStyles";
 
 export default function Onboarding({ navigation }) {
   return (
@@ -15,35 +16,15 @@ export default function Onboarding({ navigation }) {
           resizeMode={"contain"}
           style={styles.splashImg}
         />
-        <Button
-          title="Get started"
-          style={styles.button}
-          titleColor={Colors.Purple}
-          onPress={() => navigation.navigate("login")}
-        />
+        <View style={{ paddingHorizontal: 35 }}>
+          <Button
+            title="Get started"
+            style={styles.button}
+            titleColor={Colors.Purple}
+            onPress={() => navigation.navigate("login")}
+          />
+        </View>
       </Container>
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  findGadget: {
-    fontSize: 60,
-    fontWeight: "800",
-    color: Colors.White,
-    marginTop: 30,
-    alignSelf: "center",
-    width: 290,
-    letterSpacing: 0.8,
-    // fontFamily: "Montserrat",
-  },
-  splashImg: {
-    width: "100%",
-    height: 450,
-  },
-  button: {
-    backgroundColor: Colors.White,
-    marginTop: 50,
-    width: 300,
-  },
-});

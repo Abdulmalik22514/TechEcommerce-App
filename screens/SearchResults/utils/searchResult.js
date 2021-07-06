@@ -6,7 +6,7 @@ import * as Colors from "../../../common/colors";
 export const AppleItems = [
   {
     image: Images.IpadAir,
-    label: "Apple Ipad Air",
+    label: "Apple iPad Air",
     amount: 579,
   },
   {
