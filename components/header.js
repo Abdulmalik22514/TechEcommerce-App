@@ -3,18 +3,14 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { BackArrow, Heart } from "../assets/svg";
 import * as Colors from "../common/colors";
 
-export const Header = ({ title, icon }) => {
+export const Header = ({ title, icon, onPress }) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={onPress}>
         <BackArrow />
       </TouchableOpacity>
       {title ? <Text style={styles.title}>{title}</Text> : <View />}
-
       <TouchableOpacity>{icon ? icon : <View />}</TouchableOpacity>
-      {/* <Heart /> */}
-
-      {/* {hasIcon ? icon : <View />} */}
     </View>
   );
 };
