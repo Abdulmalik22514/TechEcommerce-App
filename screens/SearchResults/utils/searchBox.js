@@ -1,17 +1,10 @@
 import React from "react";
-// import { StyleSheet } from "react-native";
-import {
-  SafeAreaView,
-  StyleSheet,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 import { SearchIcon } from "../../../assets/svg";
 import * as Colors from "../../../common/colors";
 import { BackArrow } from "../../../assets/svg";
 
-export const SearchBox = ({ placeholder, onPress }) => {
+export const SearchBox = ({ placeholder, onPress, onChange, value }) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={onPress}>
@@ -24,7 +17,8 @@ export const SearchBox = ({ placeholder, onPress }) => {
           style={styles.input}
           placeholder={placeholder}
           placeholderTextColor={Colors.Black}
-          on
+          onChangeText={onChange}
+          value={value}
         />
       </View>
     </View>
