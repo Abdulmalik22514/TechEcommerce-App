@@ -15,7 +15,6 @@ export const Button = ({
       style={[
         styles.account,
         isSmall && styles.smallButton,
-        // titleColor && styles.titleColorButton,
         hasBorder && styles.borderButton,
         style,
       ]}
@@ -32,9 +31,6 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "white",
   },
-  // titleColorButton: {
-  //   backgroundColor: "white",
-  // },
   smallButton: {
     width: 133,
   },
@@ -53,7 +49,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 25,
-    width: "80%",
+    width: "100%",
     alignSelf: "center",
   },
 });
