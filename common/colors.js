@@ -9,3 +9,4 @@ export const Border = "#E3E3E3";
 export const SkyBlue = "#7485C1";
 export const RoseGold = "#C9A19C";
 export const Green = "#A1C89B";
+export const DeliveryColour = "#D3F2FF";
