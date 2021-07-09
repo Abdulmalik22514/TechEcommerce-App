@@ -9,7 +9,14 @@ export const BasketItems = [
   { picture: Images.AirPod, label: "APPLE AirPods Pro - White", amount: 375 },
 ];
 
-export const BasketCard = ({ picture, label, amount, val }) => {
+export const BasketCard = ({
+  picture,
+  label,
+  amount,
+  value,
+  onAdd,
+  onSubtract,
+}) => {
   return (
     <View style={styles.container}>
       <View style={styles.leftSide}>
@@ -21,11 +28,11 @@ export const BasketCard = ({ picture, label, amount, val }) => {
         <View style={styles.qtyBox}>
           <Text style={styles.qtyText}>Quantity</Text>
           <View style={styles.minusBox}>
-            <TouchableOpacity style={styles.minus}>
+            <TouchableOpacity style={styles.minus} onPress={onSubtract}>
               <Minus />
             </TouchableOpacity>
-            <Text style={{ fontWeight: "600" }}>{val}</Text>
-            <TouchableOpacity style={styles.minus}>
+            <Text style={{ fontWeight: "600" }}>{value}</Text>
+            <TouchableOpacity style={styles.minus} onPress={onAdd}>
               <Plus />
             </TouchableOpacity>
           </View>
