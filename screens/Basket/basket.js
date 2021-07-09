@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Alarm, Delete } from "../../assets/svg";
 import { Container } from "../../common/container";
@@ -7,13 +7,19 @@ import * as Colors from "../../common/colors";
 import { BasketCard, BasketItems } from "./utils/basketCard";
 import { Button } from "../../components/buttons";
 import { BasketStyles as styles } from "./basketStyles";
+import { TotalBox } from "../../components/total";
 
-export default function Basket() {
+export default function Basket({ navigation }) {
+  const [value, setValue] = useState(1);
   return (
     <>
       <Container>
         <View style={{ marginTop: 10 }}>
-          <Header title="Basket" icon={<Delete />} />
+          <Header
+            title="Basket"
+            icon={<Delete />}
+            onPress={() => navigation.pop()}
+          />
         </View>
         <View style={styles.deliveryBox}>
           <Alarm />
@@ -28,14 +34,17 @@ export default function Basket() {
                 picture={item.picture}
                 label={item.label}
                 amount={item.amount}
-                val="1"
+                value={value}
                 key={index}
+                onAdd={() =>
+                  value >= 1 && value < 10 ? setValue(value + 1) : null
+                }
+                onSubtract={() => (value > 1 ? setValue(value - 1) : null)}
               />
             );
           })}
-          <View style={styles.totalBox}>
-            <Text style={styles.total}>Total</Text>
-            <Text style={styles.amount}>{`$ ${954}`}</Text>
+          <View style={{ marginTop: 170 }}>
+            <TotalBox total="Total" amount="954" />
           </View>
           <View style={{ paddingHorizontal: 10 }}>
             <Button title="Checkout" titleColor={Colors.White} />
