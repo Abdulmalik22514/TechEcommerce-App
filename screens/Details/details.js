@@ -15,6 +15,7 @@ import { Container } from "../../common/container";
 import { ColorType, ColorTypeCard } from "./utils/detailsCard";
 import { Button } from "../../components/buttons";
 import { DetailsStyles as styles } from "./detailsStyles";
+import { TotalBox } from "../../components/total";
 export default function Details({ navigation, route }) {
   const { details } = route.params;
   const { amount, label } = details;
@@ -30,7 +31,7 @@ export default function Details({ navigation, route }) {
           <Image source={image} resizeMode={"contain"} style={styles.img} />
         </View>
         <View style={styles.bottomBox}>
-          <Text style={styles.apple2020}>{`2020 ${label} 10.9"`}</Text>
+          <Text style={styles.apple2020}>{`${label}`}</Text>
           <Text style={styles.colorsText}>Colors</Text>
           <View style={styles.colorBox}>
             {ColorType.map((item, index) => {
@@ -54,10 +55,7 @@ export default function Details({ navigation, route }) {
               <Seemore />
             </TouchableOpacity>
           </View>
-          <View style={styles.totalBox}>
-            <Text style={styles.total}>Total</Text>
-            <Text style={styles.amount}>{`$ ${amount}`}</Text>
-          </View>
+          <TotalBox total="Total" amount={amount} />
           <View style={{ paddingHorizontal: 10 }}>
             <Button
               title="Add to basket"
