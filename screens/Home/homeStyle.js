@@ -35,9 +35,9 @@ export const HomeStyles = StyleSheet.create({
   orderText: {
     color: Colors.Black,
     fontSize: 34,
-    fontWeight: "700",
     width: 243,
     marginLeft: 40,
+    fontFamily: "raleway700",
   },
   input: {
     fontWeight: "500",

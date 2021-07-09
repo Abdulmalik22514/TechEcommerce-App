@@ -27,7 +27,7 @@ export const SearchBox = ({ placeholder, onPress, onChange, value }) => {
 
 const styles = StyleSheet.create({
   input: {
-    fontWeight: "500",
+    fontFamily: "raleway600",
     fontSize: 19,
     marginLeft: 10,
     paddingHorizontal: 5,

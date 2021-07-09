@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   result: {
     color: Colors.Black,
     fontSize: 28,
-    fontWeight: "600",
+    fontFamily: "raleway600",
     alignSelf: "center",
   },
   resultCont: {

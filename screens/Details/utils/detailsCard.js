@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   title: {
     color: Colors.Black,
     fontSize: 14,
-    fontWeight: "700",
+    fontFamily: "raleway700",
   },
   colorType: {
     backgroundColor: Colors.SkyBlue,

@@ -8,7 +8,7 @@ export const NoResultStyles = StyleSheet.create({
   },
   tryMore: {
     color: Colors.Black,
-    fontWeight: "300",
+    fontFamily: "raleway400",
     textAlign: "center",
     fontSize: 18,
     width: 314,
@@ -21,7 +21,7 @@ export const NoResultStyles = StyleSheet.create({
   result: {
     color: Colors.Black,
     fontSize: 30,
-    fontWeight: "500",
+    fontFamily: "raleway600",
     alignSelf: "center",
   },
   NotFound: {

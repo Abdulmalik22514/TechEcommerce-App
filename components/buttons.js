@@ -38,9 +38,9 @@ const styles = StyleSheet.create({
     color: Colors.Purple,
   },
   acct: {
-    fontWeight: "700",
     color: "white",
     fontSize: 19,
+    fontFamily: "raleway700",
   },
   account: {
     backgroundColor: Colors.Purple,

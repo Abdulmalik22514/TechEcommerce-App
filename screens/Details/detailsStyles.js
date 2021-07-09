@@ -10,11 +10,11 @@ export const DetailsStyles = StyleSheet.create({
   },
   amount: {
     fontSize: 25,
-    fontWeight: "700",
+    fontFamily: "raleway700",
     color: Colors.Purple,
   },
   total: {
-    fontWeight: "300",
+    fontFamily: "raleway400",
     fontSize: 19,
     color: Colors.Black,
   },
@@ -35,13 +35,13 @@ export const DetailsStyles = StyleSheet.create({
   },
   seemore: {
     color: Colors.Purple,
-    fontWeight: "700",
+    fontFamily: "raleway700",
     fontSize: 16,
     marginTop: -3,
   },
   purchases: {
     fontSize: 17,
-    fontWeight: "300",
+    fontFamily: "raleway400",
     lineHeight: 21,
     color: Colors.Black,
     opacity: 0.5,
@@ -50,7 +50,7 @@ export const DetailsStyles = StyleSheet.create({
     marginBottom: 15,
   },
   getApple: {
-    fontWeight: "700",
+    fontFamily: "raleway700",
     fontSize: 17,
     marginBottom: 10,
   },
@@ -72,13 +72,13 @@ export const DetailsStyles = StyleSheet.create({
   apple2020: {
     alignSelf: "center",
     color: Colors.Black,
-    fontWeight: "500",
+    fontFamily: "raleway600",
     fontSize: 28,
   },
   colorsText: {
     color: Colors.Black,
     fontSize: 17,
-    fontWeight: "600",
+    fontFamily: "raleway600",
     marginTop: 15,
   },
 });

@@ -8,11 +8,11 @@ export const LoginStyles = StyleSheet.create({
   },
   findGadget: {
     fontSize: 63,
-    fontWeight: "800",
+    fontFamily: "raleway800",
     color: Colors.White,
     marginTop: 30,
     alignSelf: "center",
-    width: 290,
+    width: 300,
     letterSpacing: 0.8,
     marginBottom: 50,
   },

@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 19,
-    fontWeight: "700",
+    fontFamily: "raleway700",
     color: Colors.Black,
   },
 });

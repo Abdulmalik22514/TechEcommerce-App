@@ -42,10 +42,10 @@ export const AppleCard = ({ image, label, amount, onPress }) => {
 const styles = StyleSheet.create({
   label: {
     fontSize: 21,
-    fontWeight: "500",
+    fontFamily: "raleway600",
     color: Colors.Black,
     marginBottom: 5,
-    width: 90,
+    width: 92,
     height: 55,
     textAlign: "center",
   },
@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   amount: {
-    fontSize: 17,
-    fontWeight: "700",
+    fontSize: 14,
+    fontFamily: "raleway700",
     color: Colors.Purple,
   },
   wearablesCont: {

@@ -58,26 +58,26 @@ export const WearablesCard = ({ image, label, type, amount }) => {
 const styles = StyleSheet.create({
   title: {
     color: Colors.Ash,
-    fontWeight: "600",
     fontSize: 17,
+    fontFamily: "raleway600",
   },
   label: {
     fontSize: 19,
-    fontWeight: "600",
     color: Colors.Black,
     marginTop: 20,
     marginBottom: 10,
+    fontFamily: "raleway600",
   },
   type: {
     fontSize: 15,
-    fontWeight: "500",
     color: Colors.Grey,
     marginBottom: 20,
+    fontFamily: "raleway600",
   },
   amount: {
     fontSize: 17,
-    fontWeight: "700",
     color: Colors.Purple,
+    fontFamily: "raleway600",
   },
   wearablesCont: {
     width: 230,
