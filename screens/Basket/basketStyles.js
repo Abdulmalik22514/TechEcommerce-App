@@ -19,22 +19,4 @@ export const BasketStyles = StyleSheet.create({
     fontSize: 12,
     color: Colors.Black,
   },
-  amount: {
-    fontSize: 25,
-    fontFamily: "raleway700",
-    color: Colors.Purple,
-  },
-  total: {
-    fontFamily: "raleway400",
-    fontSize: 19,
-    color: Colors.Black,
-  },
-  totalBox: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    paddingHorizontal: 10,
-    marginBottom: 10,
-    marginTop: 170,
-  },
 });
