@@ -4,22 +4,12 @@ import Navigator from "./navigation";
 import { View, Text, StyleSheet } from "react-native";
 
 import * as Font from "expo-font";
+import LoadAssets from "./hooks/loadResource";
 
 export default function App() {
-  const [state, setState] = useState(true);
+  const { isLoadingComplete } = LoadAssets();
 
-  async function loadFonts() {
-    await Font.loadAsync({
-      Montserrat: require("./assets/fonts/Montserrat.ttf"),
-    });
-    setState(true);
-  }
-
-  // useEffect(() => {
-  //   loadFonts();
-  // }, []);
-
-  if (state) {
+  if (isLoadingComplete) {
     return <Navigator />;
   } else return null;
 }
