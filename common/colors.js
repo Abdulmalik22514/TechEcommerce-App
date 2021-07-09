@@ -10,3 +10,4 @@ export const SkyBlue = "#7485C1";
 export const RoseGold = "#C9A19C";
 export const Green = "#A1C89B";
 export const DeliveryColour = "#D3F2FF";
+export const PlusBox = "#7DCCEC";
