@@ -22,7 +22,7 @@ export default function Login({ navigation }) {
           <Input
             icon={<Lock />}
             title="Password"
-            placeholder=""
+            placeholder="******"
             secure
             isVisible
           />

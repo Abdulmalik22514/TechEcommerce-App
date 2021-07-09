@@ -26,7 +26,7 @@ export const Input = ({
         <TextInput
           style={styles.input}
           placeholder={placeholder}
-          placeholderTextColor={Colors.Grey}
+          placeholderTextColor={Colors.Black}
           secureTextEntry={secure}
         />
         <TouchableOpacity>
@@ -47,10 +47,10 @@ export const CustomText = ({ title, isCenter }) => {
 
 const styles = StyleSheet.create({
   input: {
-    height: 50,
+    height: 35,
     alignItems: "center",
     fontSize: 17,
-    fontWeight: "600",
+    fontFamily: "raleway600",
     letterSpacing: 0.3,
     width: "85%",
     paddingRight: 10,
