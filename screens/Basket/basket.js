@@ -47,7 +47,11 @@ export default function Basket({ navigation }) {
             <TotalBox total="Total" amount="954" />
           </View>
           <View style={{ paddingHorizontal: 10 }}>
-            <Button title="Checkout" titleColor={Colors.White} />
+            <Button
+              title="Checkout"
+              titleColor={Colors.White}
+              onPress={() => navigation.navigate("checkout")}
+            />
           </View>
         </View>
       </Container>
