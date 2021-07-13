@@ -16,7 +16,7 @@ export const SearchBox = ({ placeholder, onPress, onChange, value }) => {
         <TextInput
           style={styles.input}
           placeholder={placeholder}
-          placeholderTextColor={Colors.Black}
+          placeholderTextColor={Colors.Grey}
           onChangeText={onChange}
           value={value}
         />
@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
     color: Colors.Black,
     height: 40,
+    width: "90%",
   },
 
   container: {
