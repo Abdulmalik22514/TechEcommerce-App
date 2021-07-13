@@ -11,3 +11,5 @@ export const RoseGold = "#C9A19C";
 export const Green = "#A1C89B";
 export const DeliveryColour = "#D3F2FF";
 export const PlusBox = "#7DCCEC";
+export const BgColor = "#F5F5F8";
+export const EmptyView = "#9F9F9F";

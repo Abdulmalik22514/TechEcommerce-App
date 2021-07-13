@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
     marginHorizontal: 25,
     marginTop: 10,
   },
@@ -27,5 +27,6 @@ const styles = StyleSheet.create({
     fontSize: 19,
     fontFamily: "raleway700",
     color: Colors.Black,
+    marginLeft: 110,
   },
 });
