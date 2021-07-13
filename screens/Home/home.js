@@ -66,12 +66,13 @@ export default function Home({ navigation }) {
           </ScrollView>
         </View>
 
-        <View style={styles.moreBox}>
+        <TouchableOpacity
+          style={styles.moreBox}
+          onPress={() => navigation.navigate("search")}
+        >
           <Text style={styles.seemore}>see more</Text>
-          <TouchableOpacity onPress={() => navigation.navigate("search")}>
-            <Seemore />
-          </TouchableOpacity>
-        </View>
+          <Seemore />
+        </TouchableOpacity>
       </Container>
     </>
   );
