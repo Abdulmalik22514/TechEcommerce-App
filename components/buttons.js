@@ -12,12 +12,7 @@ export const Button = ({
 }) => {
   return (
     <TouchableOpacity
-      style={[
-        styles.account,
-        isSmall && styles.smallButton,
-        hasBorder && styles.borderButton,
-        style,
-      ]}
+      style={[styles.account, isSmall && styles.smallButton, style]}
       onPress={onPress}
     >
       <Text style={[styles.acct, { color: titleColor }]}>{title}</Text>
@@ -26,11 +21,6 @@ export const Button = ({
 };
 
 const styles = StyleSheet.create({
-  borderButton: {
-    backgroundColor: "transparent",
-    borderWidth: 2,
-    borderColor: "white",
-  },
   smallButton: {
     width: 133,
   },
