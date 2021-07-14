@@ -13,3 +13,6 @@ export const DeliveryColour = "#D3F2FF";
 export const PlusBox = "#7DCCEC";
 export const BgColor = "#F5F5F8";
 export const EmptyView = "#9F9F9F";
+export const CardColor = "#F4F6FA";
+export const CardBorder = "#D6D9E0";
+export const ButtonColor = "#58C0EA";
