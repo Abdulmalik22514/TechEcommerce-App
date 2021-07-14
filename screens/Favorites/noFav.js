@@ -25,6 +25,7 @@ export default function NoFav({ navigation }) {
               title="Start ordering"
               titleColor={Colors.White}
               style={styles.button}
+              onPress={() => navigation.navigate("profile")}
             />
           </View>
         </View>
