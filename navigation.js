@@ -9,6 +9,7 @@ import SearchResult from "./screens/SearchResults/search";
 import Basket from "./screens/Basket/basket";
 import Checkout from "./screens/Checkout/checkout";
 import NoFav from "./screens/Favorites/noFav";
+import ProfilePage from "./screens/Profile/profile";
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,7 @@ export default function Navigator() {
         <Stack.Screen name="basket" component={Basket} />
         <Stack.Screen name="checkout" component={Checkout} />
         <Stack.Screen name="nofav" component={NoFav} />
+        <Stack.Screen name="profile" component={ProfilePage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
